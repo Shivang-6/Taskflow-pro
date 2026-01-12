@@ -1,0 +1,95 @@
+# Create .gitignore file
+cat > .gitignore << 'EOF'
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# PHP
+/vendor/
+composer.lock
+composer.phar
+
+# CodeIgniter
+.env
+.env.*
+!.env.example
+writable/logs/
+writable/cache/
+writable/session/
+writable/uploads/
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+ios/.generated/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android
+android/.gradle
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Environment files
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Test coverage
+coverage/
+.nyc_output
+
+# Misc
+.cache/
+.parcel-cache/
+.rollup.cache/
+EOF
+
+# Check what's in your directory first
+dir
